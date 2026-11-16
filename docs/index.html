@@ -114,7 +114,7 @@ a{color:inherit}
 .chev{width:9px;height:6px;background:currentColor;clip-path:polygon(0 0,100% 0,50% 100%);transition:transform .35s var(--ease)}
 .proj-btn[aria-expanded="true"] .chev{transform:rotate(180deg)}
 .proj-short{display:none}
-.proj-menu{position:absolute;right:0;top:calc(100% - 4px);width:min(390px,100%);background:var(--paper);border:1.5px solid var(--ink);box-shadow:0 18px 40px -18px rgba(31,27,24,.45);padding:14px 18px 4px;animation:drop .3s var(--ease)}
+.proj-menu{position:absolute;right:0;top:calc(100% - 4px);width:min(390px,100%);background:var(--paper);border:1.5px solid var(--ink);box-shadow:0 18px 40px -18px rgba(31,27,24,.45);padding:14px 18px 4px;max-height:calc(100vh - 76px);max-height:calc(100dvh - 76px);overflow-y:auto;animation:drop .3s var(--ease)}
 .proj-menu[hidden]{display:none}
 @keyframes drop{from{opacity:0;transform:translateY(-8px)}}
 .proj-head{margin:0 0 2px;color:var(--muted)}
@@ -124,6 +124,7 @@ a{color:inherit}
 .pi-tri{background:var(--mustard);clip-path:polygon(50% 0,100% 100%,0 100%)}
 .pi-ring{border-radius:50%;box-shadow:inset 0 0 0 3.5px var(--teal)}
 .pi-dot{border-radius:50%;background:var(--rust)}
+.pi-diamond{background:var(--ink);clip-path:polygon(50% 0,100% 50%,50% 100%,0 50%)}
 .pi-txt{display:grid;gap:3px;min-width:0}
 .pi-txt b{font-size:15px;font-weight:700;line-height:1.3;color:var(--ink);transition:color .2s}
 .pi-txt span{font-size:13px;line-height:1.45;color:var(--muted)}
@@ -309,6 +310,11 @@ a.ch-val:hover{color:var(--mustard)}
       <a class="proj-item" href="https://findlay-currie.github.io/egg-simulation/" target="_blank" rel="noopener">
         <span class="pi-mark pi-dot" aria-hidden="true"></span>
         <span class="pi-txt"><b>Raw Egg Spread Simulator</b><span>3D simulation of a raw egg spreading on a flat surface, driven by measured density and viscosity, with hob cooking.</span></span>
+        <span class="pi-go" aria-hidden="true">↗</span>
+      </a>
+      <a class="proj-item" href="https://findlay-currie.github.io/xbox-calibrate/" target="_blank" rel="noopener">
+        <span class="pi-mark pi-diamond" aria-hidden="true"></span>
+        <span class="pi-txt"><b>Xbox Stick Calibrator</b><span>Free Android app that permanently recalibrates drifting Xbox Series X|S controller thumbsticks over USB.</span></span>
         <span class="pi-go" aria-hidden="true">↗</span>
       </a>
     </div>
